@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Acumin Pro Bold';
+    src: url('./assets/fonts/acumin-pro/Acumin-BdPro.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Acumin Pro Regular';
+    src: url('./assets/fonts/acumin-pro/Acumin-RPro.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  html, body{
+    margin: 0px;
+  }
+
+html{
+    scroll-behavior: smooth;
+}  
+
+body{
+    font-family: "Acumin Pro Regular";
+}
+
+h1{
+    font-family: "Acumin Pro Bold";
+    font-size: 70px;
+    letter-spacing: -1px;
+    line-height: 170px;
+    margin: 0px;
+}
+
+h2{
+    font-family: "Acumin Pro Bold";
+    font-size: 50px;
+    letter-spacing: -1px;
+}
+
+.d-flex{display: flex;}
+.flex-col{flex-direction: column;}
+.space-evenly{justify-content: space-evenly;}
+.justify-center{justify-content: center;}
+.align-center{align-items: center;}
+.flex-wrap{flex-wrap:wrap;}
+
+nav{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item{
+    color: white;
+    margin : 0px 15px;
+    cursor: pointer;
+}
+
+.menu-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item a:hover, .menu-item:hover{
+    text-decoration: underline;
+    color: #eee;
+}
+
+.text-banner{
+    background: black;
+    color: white;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.container{
+    text-align: center;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-width: 600px;
+    min-width: 365px;
+    margin: auto;
+    text-align: left;
+
+    padding: 20px;
+    border: 5px solid black;
+    /* border-radius: 10px; */
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container input[type="text"]{
+    background: transparent;
+    padding: 12px;
+    font-size: 16px;
+    outline: none !important;
+    -webkit-appearance: none;
+    border: 1px solid #000;
+    border-radius: 0;
+}
+
+#new-task{
+    width: 100%;
+}
+
+input#complete{
+    cursor: pointer;
+}
+
+button{
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    border: 1px solid black;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #424242;
+    transform: scale(1.01)
+}
+
+button:active{
+    transform: scale(.98)
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.list-item .list-text {
+    flex-grow: 1;
+}
+
+.list-item .delete {
+    font-size: 13px;
+    color: #B20000;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.list-item .delete:hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+
+#website-analysis{
+    margin-top: 70px;
+}
+
+.analysis-container{
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+
+.ps-score-container{
+    background:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px #eee;
+}
+
+.ps-score-container:hover{transform: scale(1.01)}
+.ps-score-container:active{transform: scale(.99)}
+
+.analysis-container a{
+    color: black;
+}
+
+.analysis-container a:hover{
+    color: #424242;
+}
+
+img.ps-score{
+    width: 200px;
+}
+
+.wpt-container{
+    max-width: 80%;
+    margin: auto;
+}
+
+.wpt-score{
+    max-width: 100%;
+    border-radius: 20px;
+}

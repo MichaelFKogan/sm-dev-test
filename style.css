@@ -94,7 +94,16 @@ nav{
     text-align: center;
 }
 
-#to-do-list{
+#to-do-list, #home{
+    position: absolute;
+    top: 0;
+}
+
+#summary, #recommendations{
+    height: 50px;
+}
+
+.to-do-list{
     margin-top: 60px;
 }
 
@@ -185,7 +194,7 @@ ul {
     transform: scale(1.02);
 }
 
-#website-analysis{
+.website-analysis{
     margin-top: 70px;
 }
 
@@ -257,5 +266,10 @@ ul {
 }
 
 .list-title{
-    font-size: 18px;
+    font-size: 19px;
+}
+
+.img__render-blocking{
+    width: 800px;
+    margin: auto;
 }

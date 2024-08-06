@@ -242,7 +242,20 @@ ul {
     flex-direction: column;
 }
 
+.wpt-container p, .wpt-container ol{
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.wpt-container ol{
+    text-align: left;
+}
+
 .wpt-score{
     max-width: 100%;
     border-radius: 20px;
+}
+
+.list-title{
+    font-size: 18px;
 }
